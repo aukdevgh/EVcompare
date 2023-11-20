@@ -18,10 +18,13 @@
             li.news__item
                 a.news__link(href=item.href aria-label=item.title)
                     span.news__img-mask
-                    img.news__img(
-                        srcset=`${item.img.srcset.x1}, ${item.img.src} 2x`
-                        src=item.img.src, alt=item.img.alt width='420' height='300'
-                    )
+                    picture
+                        source(media='(max-width: 375px)' srcset=`${item.img.srcset.x1}`)
+                        source(media='(mix-width: 376px)' srcset=`${item.img.srcset.x1}, ${item.img.src} 2x`)
+                        img.news__img(
+                            src=item.img.src
+                            alt=item.img.alt width='420' height='300'
+                        )
                 |
                 |
                 h2.news__title= item.title
