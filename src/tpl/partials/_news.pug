@@ -16,7 +16,7 @@
     ul.news__list
         each item in newsList
             li.news__item
-                a.news__link(href=item.href)
+                a.news__link(href=item.href aria-label=item.title)
                     span.news__img-mask
                     img.news__img(
                         srcset=`${item.img.srcset.x1}, ${item.img.src} 2x`

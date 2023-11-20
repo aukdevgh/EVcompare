@@ -5,8 +5,8 @@ nav.pagination
         each item in list
             if item != 1
                 li.pagintion__item
-                    a.pagination__link(href='#')= item
+                    a.pagination__link(href='#' aria-label=item)= item
             else
                 li.pagintion__item.active
-                    a.pagination__link(href='#')= item
+                    a.pagination__link(href='#' aria-label=item)= item
 

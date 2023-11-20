@@ -1,13 +1,13 @@
 .search
     form.search__from
-        button.search__btn.search__btn--submit(type="submit")
+        button.search__btn.search__btn--submit(type="submit" aria-label='кнопка поиска')
             svg.search__icon
                 use(xlink:href='#search')
         |
         |
-        input.search__input(type='text' placeholder='Найдите ваш электромобиль')
+        input.search__input(type='text' placeholder='Найдите ваш электромобиль' aria-label='поле поиска')
         |
         |
-        button#search-close.search__btn.search__btn--close(type="button")
+        button#search-close.search__btn.search__btn--close(type="button" aria-label='кнопка для закрытия панели поиска')
             svg.search__icon
                 use(xlink:href='#close')

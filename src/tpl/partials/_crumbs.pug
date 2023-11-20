@@ -8,7 +8,7 @@
     ul.crumbs__list
         each crumb in crumbsList
             li.crumbs__item
-                a.crumbs__link(href=crumb.href) #{crumb.title}
+                a.crumbs__link(href=crumb.href aria-label=crumb.title) #{crumb.title}
                     svg.crumbs__icon
                         use(xlink:href='#next')
     // /cumbs__list
