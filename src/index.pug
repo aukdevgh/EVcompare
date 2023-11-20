@@ -1,0 +1,27 @@
+extends ./tpl/layouts/default.pug
+
+
+block head
+    - const pageTitle = 'main page'
+
+block content
+    section.container
+        header.content__header
+            a.btn.content__link(href='#' aria-label='назад')
+                svg.btn__icon
+                    use(xlink:href='#prev')
+            |
+            |
+            h1.content__title Новости и анонсы
+            |
+            |
+        .content__line.line
+        |
+        |
+        include ./tpl/partials/_news
+        // /news
+        |
+        |
+        include ./tpl/partials/_pagination
+        // /pagination
+    // /container

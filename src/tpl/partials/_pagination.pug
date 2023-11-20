@@ -1,0 +1,12 @@
+-   var list = [1,2,3,4,5,6,7,8,9,10]
+
+nav.pagination
+    ul.pagination__list
+        each item in list
+            if item != 1
+                li.pagintion__item
+                    a.pagination__link(href='#')= item
+            else
+                li.pagintion__item.active
+                    a.pagination__link(href='#')= item
+

@@ -1,0 +1,46 @@
+.crumbs {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.crumbs__list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.crumbs__item {
+    &:last-child .crumbs__link .crumbs__icon {
+        display: none;
+    }
+}
+
+.crumbs__link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 600;
+    line-height: 1.2em;
+    color: $white;
+
+    text-wrap: nowrap;
+
+    transition: opacity 0.1s linear;
+
+    &:focus,
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.crumbs__icon {
+    width: 10px;
+    height: 18px;
+
+    fill: $white;
+}

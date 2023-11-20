@@ -1,0 +1,61 @@
+.btn {
+    width: min-content;
+    height: min-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: none;
+    border: 1px solid $white-opacity;
+    border-radius: 60px;
+
+    &:focus,
+    &:hover {
+        .btn__icon {
+            transform: scale(60%);
+        }
+    }
+
+    &.btn--search {
+        display: none;
+    }
+
+    @media screen and (max-width: 1200px) {
+        border: 1px solid $white;
+        border-radius: 20px;
+
+        &.btn--search {
+            display: flex;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        &.btn--charge,
+        &.btn--profile {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 340px) {
+        &.btn--search,
+        &.btn--compare {
+            display: none;
+        }
+    }
+}
+
+.btn__icon {
+    width: 60px;
+    height: 60px;
+
+    display: block;
+    line-height: 0;
+
+    transition: transform 0.1s linear;
+
+    @media screen and (max-width: 1200px) {
+        width: 40px;
+        height: 40px;
+    }
+}

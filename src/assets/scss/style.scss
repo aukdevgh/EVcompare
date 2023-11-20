@@ -1,0 +1,41 @@
+@import 'vars';
+@import 'reset';
+@import 'fonts';
+
+/* Default styles */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    color: $white;
+    font-size: 1.4rem;
+    line-height: 1.2;
+
+    background-color: $gray-dark;
+}
+
+[hidden] {
+    display: none;
+}
+
+/* Vendor libs */
+
+/* Blocks */
+@import 'blocks/hidden';
+@import 'blocks/page';
+@import 'blocks/container';
+@import 'blocks/btn';
+@import 'blocks/header';
+@import 'blocks/logo';
+@import 'blocks/nav';
+@import 'blocks/search';
+@import 'blocks/line';
+@import 'blocks/crumbs';
+@import 'blocks/content';
+@import 'blocks/news';
+@import 'blocks/pagination';

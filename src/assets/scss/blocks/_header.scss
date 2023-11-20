@@ -1,0 +1,21 @@
+.header {
+    position: relative;
+
+    padding: 20px 0;
+}
+
+.header__inner {
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    @media screen and (max-width: 1200px) {
+        gap: 15px;
+    }
+}
+
+.header__nav {
+    margin-left: auto;
+}

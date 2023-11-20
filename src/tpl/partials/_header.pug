@@ -1,0 +1,25 @@
+header.header
+    .container
+        .header__inner
+            |
+            |
+            a.logo(href='index.html' aria-label='EVcompare.io')
+                svg.logo__icon
+                    use(xlink:href='#logo')
+            |
+            |
+            include _search
+            // /search
+            .header__nav
+                include _nav
+                // /nav
+            // /header__nav
+        // /header__inner
+        .line
+        |
+        |
+        include _crumbs
+        // /crumbs
+    // /container
+
+

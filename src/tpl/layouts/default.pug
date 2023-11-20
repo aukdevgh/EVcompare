@@ -1,0 +1,23 @@
+include ../partials/_variables
+
+doctype html
+html(lang='ru')
+    include ../partials/_head
+    body
+        //- Sprite
+        include ../partials/_spriteSVG
+        // /Sprite
+        .page
+            //- Header
+            include ../partials/_header
+
+            //- Content
+            main.content
+                block content
+        // /Page
+
+        //- Modal
+
+        //- Script
+        block script
+        script(src="js/app.min.js")

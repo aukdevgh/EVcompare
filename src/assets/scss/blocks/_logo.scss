@@ -1,0 +1,15 @@
+.logo {
+    line-height: 0;
+
+    transition: opacity 0.1s linear;
+
+    &:focus,
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.logo__icon {
+    height: 60px;
+    width: clamp(130px, 40vw, 330px);
+}

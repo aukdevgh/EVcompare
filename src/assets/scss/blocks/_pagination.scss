@@ -1,0 +1,39 @@
+.pagination {
+    margin-bottom: 100px;
+}
+
+.pagination__list {
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pagintion__item {
+    &.active .pagination__link {
+        color: $red;
+    }
+}
+
+.pagination__link {
+    width: 30px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $white;
+
+    transition: color 0.1s linear;
+
+    &:focus,
+    &:hover {
+        color: $red;
+    }
+}
