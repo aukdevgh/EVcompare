@@ -1,13 +1,85 @@
 -
     var newsList = [
-        {id: '#', href:  '#', title: 'Volkswagen ID.4: первый серийный кроссовер марки на батарейках', text: 'К дебюту этого автомобиля марка готовилась три года — уже с момента презентации концепта ID.Crozz было понятно, что в скором времени линейка электрокаров пополнится кроссовером  ', author: 'Сергей Иванов', date: '3 часа назад', img: {src: '@img/img_1--full.jpg', srcset: {'x1': '@img/img_1--1x.jpg'}, alt: 'Volkswagen ID.4'}},
-        {id: '#', href:  '#', title: 'Tesla Roadster получит колеса как в Формуле 1', text: 'Похоже, Илон Маск решил собрать в новом спорткаре Tesla Roadster все возможные необычные технические решения. Мы уже писали, что этот автомобиль получит опционные ', author: 'Сергей Иванов', date: '5 часов назад', img: {src: '@img/img_2--full.jpg', srcset: {'x1': '@img/img_2--1x.jpg'}, alt: 'Tesla Roadster'}},
-        {id: '#', href:  '#', title: 'Lucid Air сможет заряжаться быстрее всех', text: 'Компания Lucid Motors раскрыла подробности о зарядке своего электрокара Air. Этот седан сможет заряжаться током с напряжением более 900 вольт, что станет рекордом для современных ', author: 'Сергей Иванов', date: '19 августа 2020', img: {src: '@img/img_3--full.jpg', srcset: {'x1': '@img/img_3--1x.jpg'}, alt: 'Lucid Air'}},
-        {id: '#', href:  '#', title: 'Porsche слегка улучшил Taycan', text: 'Компания Porsche рассказала об электрокаре Taycan 2021 модельного года, который поступит в продажу в сентябре. Машина получила минимальные обновления ', author: 'Сергей Иванов', date: '19 августа 2020', img: {src: '@img/img_4--full.jpg', srcset: {'x1': '@img/img_4--1x.jpg'}, alt: 'Porsche'}},
-        {id: '#', href:  '#', title: 'В Volvo попытались доказать превосходство над Tesla. Получилось не очень', text: 'Шведская марка Polestar, которая принадлежит концерну Volvo, организовала в США тест электромобилей на запас хода с целью доказать, что их седан Polestar 2 имеет преимущество ', author: 'Сергей Иванов', date: '3 часа назад', img: {src: '@img/img_5--full.jpg', srcset: {'x1': '@img/img_5--1x.jpg'}, alt: 'Volvo'}},
-        {id: '#', href:  '#', title: 'Новые аккумуляторы Tesla подойдут самолетам', text: 'Группа сотрудников канадского исследовательского центра Tesla опубликовала в журнале Nature научную статью о своих успехах в создании литий-металлических аккумуляторов ', author: 'Сергей Иванов', date: '5 часов назад', img: {src: '@img/img_6--full.jpg', srcset: {'x1': '@img/img_6--1x.jpg'}, alt: 'Tesla'}},
-        {id: '#', href:  '#', title: 'Cadillac Lyriq будет неожиданно дешевым', text: 'На прошлой неделе концерн General Motors представил серийную версию электрического кроссовера Cadillac Lyriq, который, в сравнении с Tesla Model X, показался нам хорошей машиной ', author: 'Сергей Иванов', date: '19 августа 2020', img: {src: '@img/img_7--full.jpg', srcset: {'x1': '@img/img_7--1x.jpg'}, alt: 'Cadillac Lyriq'}},
-        {id: '#', href:  '#', title: 'В Формуле Е новый чемпион', text: 'Антониу Феликс да Кошта финишировал вторым в четвертой из шести гонок в Берлине, которые завершают очередной сезон Формулы Е  Благодаря этому спортсмен стал недосягаем ', author: 'Сергей Иванов', date: '19 августа 2020', img: {src: '@img/img_8--full.jpg', srcset: {'x1': '@img/img_8--1x.jpg'}, alt: 'чемпион формулы Е'}},
+        {id: '#', href:  '#', title: 'Volkswagen ID.4: первый серийный кроссовер марки на батарейках', text: 'К дебюту этого автомобиля марка готовилась три года — уже с момента презентации концепта ID.Crozz было понятно, что в скором времени линейка электрокаров пополнится кроссовером  ', author: 'Сергей Иванов', date: '3 часа назад', img: {src: '@img/img_1--full.jpg',
+        alt: 'Volkswagen ID.4',
+        srcset: {
+            'x1-avif': '@img/img_1--1x.avif',
+            'x1-webp': '@img/img_1--1x.webp',
+            'x1-jpg': '@img/img_1--1x.jpg',
+            'full-avif': '@img/img_1--full.avif',
+            'full-webp': '@img/img_1--full.webp',
+            'full-jpg': '@img/img_1--full.jpg'
+            }
+        }},
+        {id: '#', href:  '#', title: 'Tesla Roadster получит колеса как в Формуле 1', text: 'Похоже, Илон Маск решил собрать в новом спорткаре Tesla Roadster все возможные необычные технические решения. Мы уже писали, что этот автомобиль получит опционные ', author: 'Сергей Иванов', date: '5 часов назад', img: {src: '@img/img_2--full.jpg', alt: 'Tesla Roadster',
+        srcset: {
+            'x1-avif': '@img/img_2--1x.avif',
+            'x1-webp': '@img/img_2--1x.webp',
+            'x1-jpg': '@img/img_2--1x.jpg',
+            'full-avif': '@img/img_2--full.avif',
+            'full-webp': '@img/img_2--full.webp',
+            'full-jpg': '@img/img_2--full.jpg'
+            }
+        }},
+        {id: '#', href:  '#', title: 'Lucid Air сможет заряжаться быстрее всех', text: 'Компания Lucid Motors раскрыла подробности о зарядке своего электрокара Air. Этот седан сможет заряжаться током с напряжением более 900 вольт, что станет рекордом для современных ', author: 'Сергей Иванов', date: '19 августа 2020', img: {src: '@img/img_3--full.jpg',  alt: 'Lucid Air',
+        srcset: {
+            'x1-avif': '@img/img_3--1x.avif',
+            'x1-webp': '@img/img_3--1x.webp',
+            'x1-jpg': '@img/img_3--1x.jpg',
+            'full-avif': '@img/img_3--full.avif',
+            'full-webp': '@img/img_3--full.webp',
+            'full-jpg': '@img/img_3--full.jpg'
+            }}},
+        {id: '#', href:  '#', title: 'Porsche слегка улучшил Taycan', text: 'Компания Porsche рассказала об электрокаре Taycan 2021 модельного года, который поступит в продажу в сентябре. Машина получила минимальные обновления ', author: 'Сергей Иванов', date: '19 августа 2020', img: {src: '@img/img_4--full.jpg', alt: 'Porsche',
+        srcset: {
+            'x1-avif': '@img/img_4--1x.avif',
+            'x1-webp': '@img/img_4--1x.webp',
+            'x1-jpg': '@img/img_4--1x.jpg',
+            'full-avif': '@img/img_4--full.avif',
+            'full-webp': '@img/img_4--full.webp',
+            'full-jpg': '@img/img_4--full.jpg'
+            }
+        }},
+        {id: '#', href:  '#', title: 'В Volvo попытались доказать превосходство над Tesla. Получилось не очень', text: 'Шведская марка Polestar, которая принадлежит концерну Volvo, организовала в США тест электромобилей на запас хода с целью доказать, что их седан Polestar 2 имеет преимущество ', author: 'Сергей Иванов', date: '3 часа назад', img: {src: '@img/img_5--full.jpg', alt: 'Volvo',
+        srcset: {
+            'x1-avif': '@img/img_5--1x.avif',
+            'x1-webp': '@img/img_5--1x.webp',
+            'x1-jpg': '@img/img_5--1x.jpg',
+            'full-avif': '@img/img_5--full.avif',
+            'full-webp': '@img/img_5--full.webp',
+            'full-jpg': '@img/img_5--full.jpg'
+            }
+        }},
+        {id: '#', href:  '#', title: 'Новые аккумуляторы Tesla подойдут самолетам', text: 'Группа сотрудников канадского исследовательского центра Tesla опубликовала в журнале Nature научную статью о своих успехах в создании литий-металлических аккумуляторов ', author: 'Сергей Иванов', date: '5 часов назад', img: {src: '@img/img_6--full.jpg', alt: 'Tesla',
+        srcset: {
+            'x1-avif': '@img/img_6--1x.avif',
+            'x1-webp': '@img/img_6--1x.webp',
+            'x1-jpg': '@img/img_6--1x.jpg',
+            'full-avif': '@img/img_6--full.avif',
+            'full-webp': '@img/img_6--full.webp',
+            'full-jpg': '@img/img_6--full.jpg'
+            }
+        }},
+        {id: '#', href:  '#', title: 'Cadillac Lyriq будет неожиданно дешевым', text: 'На прошлой неделе концерн General Motors представил серийную версию электрического кроссовера Cadillac Lyriq, который, в сравнении с Tesla Model X, показался нам хорошей машиной ', author: 'Сергей Иванов', date: '19 августа 2020', img: {src: '@img/img_7--full.jpg', alt: 'Cadillac Lyriq',
+        srcset: {
+            'x1-avif': '@img/img_7--1x.avif',
+            'x1-webp': '@img/img_7--1x.webp',
+            'x1-jpg': '@img/img_7--1x.jpg',
+            'full-avif': '@img/img_7--full.avif',
+            'full-webp': '@img/img_7--full.webp',
+            'full-jpg': '@img/img_7--full.jpg'
+            }
+        }},
+        {id: '#', href:  '#', title: 'В Формуле Е новый чемпион', text: 'Антониу Феликс да Кошта финишировал вторым в четвертой из шести гонок в Берлине, которые завершают очередной сезон Формулы Е  Благодаря этому спортсмен стал недосягаем ', author: 'Сергей Иванов', date: '19 августа 2020', img: {src: '@img/img_8--full.jpg', alt: 'чемпион формулы Е',
+        srcset: {
+            'x1-avif': '@img/img_8--1x.avif',
+            'x1-webp': '@img/img_8--1x.webp',
+            'x1-jpg': '@img/img_8--1x.jpg',
+            'full-avif': '@img/img_8--full.avif',
+            'full-webp': '@img/img_8--full.webp',
+            'full-jpg': '@img/img_8--full.jpg'
+            }
+        }},
     ];
 
 
@@ -19,8 +91,14 @@
                 a.news__link(href=item.href aria-label=item.title)
                     span.news__img-mask
                     picture
-                        source(media='(max-width: 375px)' srcset=`${item.img.srcset.x1}`)
-                        source(media='(mix-width: 376px)' srcset=`${item.img.srcset.x1}, ${item.img.src} 2x`)
+                        source(type="image/avif" media='(max-width: 375px)'  srcset=`${item.img.srcset['x1-avif']}`)
+                        source(type="image/webp" media='(max-width: 375px)' srcset=`${item.img.srcset['x1-webp']}`)
+                        source(media='(max-width: 375px)' srcset=`${item.img.srcset['x1-jpg']}`)
+                        source(type="image/avif" media='(mix-width: 376px)' srcset=`${item.img.srcset['x1-avif']}, ${item.img.srcset['full-avif']} 2x`)
+                        source(type="image/webp" media='(mix-width: 376px)' srcset=`${item.img.srcset['x1-webp']}, ${item.img.srcset['full-webp']} 2x`)
+                        source(media='(mix-width: 376px)' srcset=`${item.img.srcset['x1-jpg']}, ${item.img.srcset['full-jpg']} 2x`)
+                        |
+                        |
                         img.news__img(
                             src=item.img.src
                             alt=item.img.alt width='420' height='300'
