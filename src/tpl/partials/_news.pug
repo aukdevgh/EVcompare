@@ -94,9 +94,19 @@
                         source(type="image/avif" media='(max-width: 375px)'  srcset=`${item.img.srcset['x1-avif']}`)
                         source(type="image/webp" media='(max-width: 375px)' srcset=`${item.img.srcset['x1-webp']}`)
                         source(media='(max-width: 375px)' srcset=`${item.img.srcset['x1-jpg']}`)
-                        source(type="image/avif" media='(mix-width: 376px)' srcset=`${item.img.srcset['x1-avif']}, ${item.img.srcset['full-avif']} 2x`)
-                        source(type="image/webp" media='(mix-width: 376px)' srcset=`${item.img.srcset['x1-webp']}, ${item.img.srcset['full-webp']} 2x`)
-                        source(media='(mix-width: 376px)' srcset=`${item.img.srcset['x1-jpg']}, ${item.img.srcset['full-jpg']} 2x`)
+
+                        source(type="image/avif" srcset=`
+                            ${item.img.srcset['x1-avif']} 1x,
+                            ${item.img.srcset['full-avif']} 2x`
+                        )
+                        source(type="image/webp" srcset=`
+                            ${item.img.srcset['x1-webp']} 1x,
+                            ${item.img.srcset['full-webp']} 2x`
+                        )
+                        source(srcset=`
+                            ${item.img.srcset['x1-jpg']} 1x,
+                            ${item.img.srcset['full-jpg']} 2x`
+                        )
                         |
                         |
                         img.news__img(
